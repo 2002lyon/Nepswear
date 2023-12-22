@@ -1,0 +1,131 @@
+footer {
+  background: $color-almost-white;
+  // background: $color-primary;
+
+  .footer-container {
+    padding: 7rem 0;
+    padding-top: 13rem;
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    // border: 1px solid red;
+
+    .footer-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: flex-start;
+
+      @include respond(medium) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+      }
+      @include respond(small){
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+      }
+
+      .footer-box {
+        padding: 0 5rem;
+
+        @include respond(small){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+        &.footer-brand-desc {
+          border-right: 2px solid $color-shaded-gray;
+          padding-left: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-right: 4rem;
+          text-align: justify;
+
+          @include respond(large){
+            padding-left: 3rem;
+          }
+
+          @include respond(medium){
+            padding-left: 3rem;
+          }
+        }
+
+        &:not(:first-child) {
+          padding-right: 5rem;
+        }
+
+        .footer-logo {
+          width: 50px;
+        }
+
+        .footer-socials {
+          display: flex;
+          gap: 3rem;
+          margin-top: 2rem;
+          align-items: center;
+
+          i {
+            font-size: 2.8rem;
+            color: $color-black;
+          }
+        }
+
+        .footer-head {
+          font-size: 2rem;
+          letter-spacing: 1px;
+          color: $color-light-black;
+        }
+
+        .footer-items {
+          list-style: none;
+          padding-left: 0;
+          margin-top: 2rem;
+
+          li {
+            margin-bottom: 2px;
+
+            a {
+              text-decoration: none;
+              font-size: 1.6rem;
+              color: $color-black;
+              letter-spacing: 0.3px;
+              transition: all 0.3s;
+
+              &:hover {
+                color: $color-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: $color-secondary;
+
+  .footer-info {
+    color: $color-white;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
