@@ -128,20 +128,22 @@
         <div class="container">
           <div class="header-bottom-box">
             <div class="logo-box">
-              <img src="/assets/images/logo_1x.png" alt="logo" />
+              <a href="index.html">
+                <img src="/assets/images/logo_1x.png" alt="logo" />
+              </a>
             </div>
           </div>
           <nav>
             <div class="nav-items">
               <div class="nav-item">
-                <a href="#" class="active">Home</a>
+                <a href="#">Home</a>
               </div>
               <div class="nav-item">
-                <a href="#">Men</a>
+                <a href="categories.html" class="active">Categories</a>
               </div>
-              <div class="nav-item">
+              <!-- <div class="nav-item">
                 <a href="#">Women</a>
-              </div>
+              </div> -->
               <div class="nav-item">
                 <a href="#">About</a>
               </div>
@@ -157,179 +159,134 @@
       </div>
     </header>
 
-    <section id="prodetails" class="">
-      <div class="single-product">
-        <div class="single-pro-image">
-          <img
-            src="assets/images/jackets.jpg"
-            width="100%"
-            id="MainImg"
-            alt=""
-          />
-        </div>
-
-        <div class="small-img-group">
-          <div class="small-img-col">
-            <img
-              src="assets/images/jackets.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="assets/images/product2.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="assets/images/product3.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-          <div class="small-img-col">
-            <img
-              src="assets/images/product4.jpg"
-              width="100%"
-              class="small-img"
-              alt=""
-            />
-          </div>
-        </div>
+    <section id="categories" class="section-space" style="margin-top: 12rem;">
+      <div class="categories-title-container">
+        <h3 class="title-heading category-title">Categories</h3>
       </div>
-      <div class="single-pro-details">
-        <h6>Jackets</h6>
-        <h4>Light Green Button-Up Jacket</h4>
-        <div class="price">
-          <h2 class="origi-price"><s>Rs. 2000</s></h2>
-          <h2>Rs. 1500</h2>
-        </div>
-        <select>
-          <option style="display: none; font-size: 1.2rem">Select Size</option>
-          <option>XXL</option>
-          <option>XL</option>
-          <option>Large</option>
-          <option>Medium</option>
-          <option>Small</option>
-        </select>
-        <input type="number" value="1" />
-        <button class="shop-link">Add To Cart</button>
-        <h5>Product Details</h5>
-        <div class="product-description">
-          <p>
-            Elevate your wardrobe with our Light Green Jacket, a versatile and
-            stylish addition that effortlessly blends fashion and comfort.
-            Crafted with precision, this jacket showcases a modern tailored fit,
-            ensuring a flattering silhouette. The refreshing light green color
-            adds a touch of sophistication, making it the perfect choice for
-            various occasions. With functional design elements such as ample
-            pockets and a secure closure, this jacket is both practical and
-            on-trend. Whether you're heading out for a casual day or looking to
-            make a statement in the evening, our Light Green Jacket is the
-            epitome of contemporary style.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="recommendations">
-      <div class="recom-title">
-        <h3>Other Products</h3>
-      </div>
-
-      <div class="recom-products">
-        <div class="product-row">
-          <div class="product-container">
-            <div class="product-card">
-              <div class="product-tags">
-                <div class="product-tag">-5%</div>
-              </div>
-              <div class="product-card-image">
-                <a href=""><img src="assets/images/shoe-1.jpg" alt="" /></a>
-              </div>
-              <div class="product-detail">
-                <!-- <h5 class="product-category">Dress</h5> -->
-                <a href="">
-                  <h3 class="product-title">Golden Elegant Pen heels</h3>
-                </a>
-
-                <div class="price">
-                  <p class="product-price-cut"><s>Rs 5,000</s></p>
-                  <p class="product-price">Rs 4,750</p>
-                </div>
-                <a href="" class="shop-link">Buy now</a>
+      <div class="categories-container">
+        <div class="categories-row">
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img src="/assets/images/men.jpg" alt="" class="category-bg" />
+              <div class="category-details">
+                <h3 class="category-name">Men</h3>
+                <button class="category-button">See all</button>
               </div>
             </div>
           </div>
 
-          <div class="product-container">
-            <div class="product-card">
-              <div class="product-tags">
-                <div class="product-tag">-3%</div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img
+                src="/assets/images/children.jpg"
+                alt=""
+                class="category-bg"
+              />
+              <div class="category-details">
+                <h3 class="category-name">Children</h3>
+                <button class="category-button">See all</button>
               </div>
-              <div class="product-card-image">
-                <a href=""><img src="assets/images/shoes-5.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box">
+              <img
+                src="/assets/images/jackets.jpg"
+                alt=""
+                class="category-bg"
+              />
+              <div class="category-details">
+                <h3 class="category-name">Jackets</h3>
+                <button class="category-button">See all</button>
               </div>
-              <div class="product-detail">
-                <!-- <h5 class="product-category">Dress</h5> -->
-                <a href="">
-                  <h3 class="product-title">Cream White lace up boots</h3>
-                </a>
-
-                <div class="price">
-                  <p class="product-price-cut"><s>Rs 3,000</s></p>
-                  <p class="product-price">Rs 2800</p>
-                </div>
-                <a href="" class="shop-link">Buy now</a>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img src="/assets/images/shoes.jpg" alt="" class="category-bg" />
+              <div class="category-details">
+                <h3 class="category-name">Shoes</h3>
+                <button class="category-button">See all</button>
+              </div>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img
+                src="/assets/images/classic.jpg"
+                alt=""
+                class="category-bg"
+              />
+              <div class="category-details">
+                <h3 class="category-name">T-shirt</h3>
+                <button class="category-button">See all</button>
+              </div>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img
+                src="/assets/images/sweater.jpg"
+                alt=""
+                class="category-bg"
+              />
+              <div class="category-details">
+                <h3 class="category-name">Sweaters</h3>
+                <button class="category-button">See all</button>
               </div>
             </div>
           </div>
 
-          <div class="product-container">
-            <div class="product-card">
-              <div class="product-tags">
-                <div class="product-tag">-5%</div>
-              </div>
-              <div class="product-card-image">
-                <a href=""><img src="assets/images/Shoes-3.jpg" alt="" /></a>
-              </div>
-              <div class="product-detail">
-                <a href="">
-                  <h3 class="product-title">Nude colored high heels</h3>
-                </a>
-
-                <div class="price">
-                  <p class="product-price-cut"><s>Rs 6,000</s></p>
-                  <p class="product-price">Rs 5700</p>
-                </div>
-                <a href="" class="shop-link">Buy now</a>
+          <div class="category-container">
+            <div class="category-box">
+              <img
+                src="/assets/images/lingerie.jpg"
+                alt=""
+                class="category-bg"
+              />
+              <div class="category-details">
+                <h3 class="category-name">lingerie</h3>
+                <button class="category-button">See all</button>
               </div>
             </div>
           </div>
-          <div class="product-container">
-            <div class="product-card">
-              <div class="product-tags">
-                <!-- <div class="product-tag">Premium</div> -->
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img src="/assets/images/coats.jpg" alt="" class="category-bg" />
+              <div class="category-details">
+                <h3 class="category-name">Coats</h3>
+                <button class="category-button">See all</button>
               </div>
-              <div class="product-card-image">
-                <a href=""><img src="assets/images/Shoes-4.jpg" alt="" /></a>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img src="/assets/images/hoodie.jpg" alt="" class="category-bg" />
+              <div class="category-details">
+                <h3 class="category-name">Hoodie</h3>
+                <button class="category-button">See all</button>
               </div>
-              <div class="product-detail">
-                <a href="">
-                  <h3 class="product-title">Elegant Black Heels</h3>
-                </a>
-
-                <div class="price">
-                  <!-- <p class="product-price-cut"><s>Rs 2,500</s></p> -->
-                  <p class="product-price">Rs 6,999</p>
-                </div>
-                <a href="" class="shop-link">Buy now</a>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img
+                src="/assets/images/joggers.jpg"
+                alt=""
+                class="category-bg"
+              />
+              <div class="category-details">
+                <h3 class="category-name">Joggers</h3>
+                <button class="category-button">See all</button>
+              </div>
+            </div>
+          </div>
+          <div class="category-container">
+            <div class="category-box light-box-shadow">
+              <img src="/assets/images/shorts.jpg" alt="" class="category-bg" />
+              <div class="category-details">
+                <h3 class="category-name">Shorts</h3>
+                <button class="category-button">See all</button>
               </div>
             </div>
           </div>
@@ -420,7 +377,6 @@
       </div>
     </section>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/productDetail.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
