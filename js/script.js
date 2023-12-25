@@ -14,17 +14,9 @@ let lastScrollTop = 0;
 function updateHeaderOpacity() {
   var currentScroll = window.scrollY || window.pageYOffset;
 
-  // if (currentScroll == 0 || lastScrollTop == 0) {
-  //   header.style.position = "relative";
-  // }
-
   if (currentScroll > lastScrollTop && currentScroll > 100) {
     header.style.transition = "opacity 0.3s ease";
     header.style.opacity = "0";
-    // if (storyContainer) {
-    //   storyContainer.style.marginTop = "22rem";
-    // }
-    // header.style.position = "relative";
   } else {
     header.style.transition = "opacity 0.3s ease";
     header.style.position = "fixed";
@@ -44,7 +36,7 @@ window.addEventListener("scroll", function () {
 $(document).ready(function () {
   $(".hero-slide").slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 4000,
     dots: false,

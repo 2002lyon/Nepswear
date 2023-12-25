@@ -161,6 +161,11 @@ header {
       // border: 1px solid red;
       padding: 1rem 0;
 
+
+      @include respond(small) {
+        gap: 2rem;
+      }
+
       .nav-item {
         a {
           text-decoration: none;

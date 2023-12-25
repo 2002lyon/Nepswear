@@ -1,96 +1,129 @@
 footer {
-  background: $color-almost-white;
-  // background: $color-primary;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  background-color: rgba($color: $color-shaded-gray, $alpha: 0.05);
 
-  .footer-container {
-    padding: 7rem 0;
-    padding-top: 13rem;
-    display: flex;
-    max-width: 1300px;
-    margin: auto;
-    // border: 1px solid red;
+  .container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
 
-    .footer-row {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      align-items: flex-start;
+    @include respond(medium) {
+      max-width: 960px;
+    }
 
-      @include respond(medium) {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      @include respond(small) {
+        flex-direction: column;
       }
-      @include respond(small){
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-      }
 
-      .footer-box {
-        padding: 0 5rem;
+      .footer-widget {
+        width: calc(20% - 30px);
+        margin: 0 15px 50px;
+        padding: 0 12px;
 
-        @include respond(small){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        @include respond(medium) {
+          width: calc(50% - 30px);
+        }
+
+        @include respond(small) {
+          width: 100%;
+          margin: 0 10px 50px;
+        }
+
+        &:nth-child(1) {
+          width: calc(40% - 50px);
+          margin-right: 15px;
+
+          @include respond(medium) {
+            width: calc(50% - 30px);
           }
 
-        &.footer-brand-desc {
-          border-right: 2px solid $color-shaded-gray;
-          padding-left: 0;
+          @include respond(small) {
+            width: 100%;
+            margin: 0 10px 50px;
+          }
+        }
+
+        .logo {
+          margin-bottom: 30px;
+          vertical-align: middle;
+          width: 8rem;
+          aspect-ratio: 1/1;
+          object-fit: contain;
+          object-position: center;
+        }
+
+        p {
+          margin-bottom: 30px;
+          font-size: 1.4rem;
+          line-height: 24px;
+        }
+        .desc {
+          margin-bottom: 30px;
+          font-size: 1.5rem;
+          line-height: 24px;
+          color: $color-shaded-gray;
+        }
+
+        .socials {
           display: flex;
-          flex-direction: column;
           align-items: center;
-          padding-right: 4rem;
-          text-align: justify;
-
-          @include respond(large){
-            padding-left: 3rem;
-          }
-
-          @include respond(medium){
-            padding-left: 3rem;
-          }
-        }
-
-        &:not(:first-child) {
-          padding-right: 5rem;
-        }
-
-        .footer-logo {
-          width: 50px;
-        }
-
-        .footer-socials {
-          display: flex;
-          gap: 3rem;
-          margin-top: 2rem;
-          align-items: center;
-
-          i {
-            font-size: 2.8rem;
-            color: $color-black;
-          }
-        }
-
-        .footer-head {
-          font-size: 2rem;
-          letter-spacing: 1px;
-          color: $color-light-black;
-        }
-
-        .footer-items {
-          list-style: none;
+          justify-content: flex-start;
           padding-left: 0;
-          margin-top: 2rem;
 
           li {
-            margin-bottom: 2px;
+            list-style: none;
 
             a {
+              width: 44px;
+              height: 44px;
+              margin-right: 10px;
+              color: #ffffff;
+              background-color: rgba($color: $color-primary, $alpha: 0.8);
+              border-radius: 50%;
+              font-size: 2rem;
               text-decoration: none;
-              font-size: 1.6rem;
-              color: $color-black;
-              letter-spacing: 0.3px;
-              transition: all 0.3s;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.3s ease-out;
+
+              &:hover {
+                background-color: $color-primary;
+              }
+            }
+          }
+        }
+
+        h6 {
+          color: $color-shaded-gray;
+          margin: 10px 0 35px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .links {
+          padding-left: 0;
+
+          li {
+            list-style: none;
+
+            a {
+              color: $color-shaded-gray;
+              font-size: 16px;
+              text-decoration: none;
+              text-transform: capitalize;
+              line-height: 32px;
+              transition: all 0.3s ease-out;
 
               &:hover {
                 color: $color-primary;
@@ -100,31 +133,30 @@ footer {
         }
       }
     }
-  }
-}
 
-#footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  background: $color-secondary;
+    .copyright-wrapper {
+      padding: 20px 0;
+      border-top: 1px solid rgba($color: $color-shaded-gray, $alpha: 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  .footer-info {
-    color: $color-white;
+      .copyright {
+        color: rgba($color: $color-shaded-gray, $alpha: 0.6);
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.4rem;
 
-    p {
-      font-size: 1.5rem;
-      font-weight: 400;
-      text-align: center;
-    }
+        a {
+          color: inherit;
+          font-weight: 500;
+          text-decoration: none;
+          transition: all 0.3s ease-out;
 
-    a {
-      text-decoration: none;
-      color: $color-white;
-
-      &:hover {
-        text-decoration: underline;
+          &:hover {
+            color: $color-primary;
+          }
+        }
       }
     }
   }
