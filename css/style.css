@@ -332,7 +332,7 @@ p {
         #featured .featured-container .product-row .product-container .product-card .product-card-image {
           overflow: hidden; }
           #featured .featured-container .product-row .product-container .product-card .product-card-image img {
-            height: 35rem;
+            height: 18rem;
             width: 100%;
             object-fit: cover;
             transform: scale(1.04);
@@ -1220,7 +1220,7 @@ footer {
         #recommendations .product-row .product-container .product-card .product-card-image {
           overflow: hidden; }
           #recommendations .product-row .product-container .product-card .product-card-image img {
-            height: 35rem;
+            height: 18rem;
             width: 100%;
             object-fit: cover;
             transform: scale(1.04);
