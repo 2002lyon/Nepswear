@@ -29,6 +29,36 @@ footer {
         width: calc(20% - 30px);
         margin: 0 15px 50px;
         padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+
+        .payment-options {
+          display: flex;
+          flex-direction: column;
+          margin-top: 2rem;
+
+          p {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $color-shaded-gray;
+          }
+
+          .payment-images {
+            display: flex;
+            // gap: 0.5rem;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+              width: auto;
+              height: 3rem;
+              object-fit: contain;
+              object-position: center;
+              cursor: pointer;
+            }
+          }
+        }
 
         @include respond(medium) {
           width: calc(50% - 30px);
