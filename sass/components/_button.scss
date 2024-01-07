@@ -102,7 +102,7 @@
   }
 }
 
-.newsletter-button{
+.newsletter-button {
   text-decoration: none;
   color: rgba($color: $color-black, $alpha: 1);
   display: inline-block;
@@ -120,12 +120,27 @@
   height: 100%;
   z-index: 10;
 
-  @include respond(small){
+  @include respond(small) {
     padding: 1.5rem 2.5rem;
   }
 
   &:hover {
     background-color: rgba($color: $color-white, $alpha: 0.4);
     color: rgba($color: $color-black, $alpha: 1);
+  }
+}
+
+.add-to-cart {
+  font-size: 1.4rem;
+  color: $color-black;
+  background: transparent;
+  padding: 1rem 2rem;
+  border-radius: 35px;
+  margin-top: 1rem;
+  transition: background-color 0.5s;
+  border: 1px solid rgba($color: $color-shaded-gray, $alpha: 0.6);
+
+  &:hover {
+    background: rgba($color: $color-shaded-gray, $alpha: 0.1);
   }
 }

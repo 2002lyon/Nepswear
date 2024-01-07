@@ -35,7 +35,6 @@
       height: 55rem;
       padding-right: 50px;
 
-
       @include respond(medium) {
         min-height: 490px;
         height: 49rem;
@@ -73,8 +72,6 @@
         padding-right: 0px;
       }
 
-      
-
       .small-img-col {
         // flex-basis: 24%;
         // flex-basis: auto;
@@ -96,7 +93,6 @@
   .single-pro-details {
     width: 50%;
     padding-top: 30px;
-    
 
     @include respond(medium) {
       // width: 100%;
@@ -157,9 +153,17 @@
       font-size: 1.4rem;
       margin-right: 1.5rem;
     }
-    button {
-      border-radius: 3px;
+
+    .action-options {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      button {
+        border-radius: 3px;
+      }
     }
+
     input:focus {
       outline: none;
     }
@@ -187,7 +191,7 @@
   margin: 0 auto;
   margin-top: 3rem;
 
-  a{
+  a {
     text-decoration: none;
   }
 
