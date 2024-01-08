@@ -1,0 +1,30 @@
+.filter-header {
+  .filter-condition {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    span {
+      font-size: 1.3rem;
+      color: $color-shaded-gray;
+    }
+    .selector {
+      padding: 1rem 3rem 1em 0.5rem;
+      font-size: 1.3rem;
+      color: $color-shaded-gray;
+
+      &:focus {
+        outline: none;
+      }
+
+      option {
+        font-size: 1.3rem;
+        color: $color-shaded-gray;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 1500px;
+  padding: 0 4rem;
+}

@@ -77,12 +77,34 @@
   //   width: 100%;
 
   &:hover {
-    color: white;
+    color: $color-white;
     background-position: 100% 0;
   }
+}
+
+.shop-link-btn {
+  font-size: 1.4rem;
+  width: 100%;
+  color: $color-white;
+  background: linear-gradient(
+    120deg,
+    rgba(236, 37, 120, 1),
+    rgba(106, 47, 143, 1),
+    rgba(0, 167, 210, 1)
+  );
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+
+  background-size: 200% 100%;
+  background-position: 0 100%;
+  transition: background-position 0.5s;
+  border: none;
+  //   width: 100%;
 
   &:hover {
     color: $color-white;
+    background-position: 100% 0;
   }
 }
 

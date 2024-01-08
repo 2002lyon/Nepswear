@@ -1,9 +1,13 @@
 #hero {
   .hero-slide {
+    .slick-prev,
+    .slick-next {
+      display: block !important; /* Use !important to override other styles if necessary */
+    }
     .hero-slide-container {
       position: relative;
       height: 70vh;
-    //   border: 1px solid red;
+      //   border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -37,19 +41,18 @@
           width: 100%;
           text-align: center;
           max-width: 80%;
-        //   border: 5px solid orange;
+          //   border: 5px solid orange;
 
           .hero-primary-head {
             color: $color-white;
             font-size: 10rem;
             text-transform: uppercase;
-            font-family: 'Playfair Display', serif;
+            font-family: "Playfair Display", serif;
             // border: 1px solid red;
           }
 
           .hero-secondary-head {
-              color: $color-shaded-gray;
-              
+            color: $color-shaded-gray;
           }
 
           .hero-tertiary-paragraph {
@@ -61,11 +64,11 @@
             font-weight: 500;
           }
 
-          .hero-features{
+          .hero-features {
             text-transform: uppercase;
             font-size: 1.5rem;
             color: $color-white;
-            letter-spacing: .2rem;
+            letter-spacing: 0.2rem;
             position: absolute;
             bottom: 3rem;
             left: 50%;
@@ -87,11 +90,10 @@
       }
     }
 
-
     .hero-slide-container-2 {
       position: relative;
       height: 70vh;
-    //   border: 1px solid red;
+      //   border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -125,19 +127,18 @@
           width: 100%;
           text-align: center;
           max-width: 80%;
-        //   border: 5px solid orange;
+          //   border: 5px solid orange;
 
           .hero-primary-head {
             color: $color-white;
             font-size: 10rem;
             text-transform: uppercase;
-            font-family: 'Playfair Display', serif;
+            font-family: "Playfair Display", serif;
             // border: 1px solid red;
           }
 
           .hero-secondary-head {
-              color: $color-shaded-gray;
-              
+            color: $color-shaded-gray;
           }
 
           .hero-tertiary-paragraph {
@@ -149,11 +150,11 @@
             font-weight: 500;
           }
 
-          .hero-features{
+          .hero-features {
             text-transform: uppercase;
             font-size: 1.5rem;
             color: $color-white;
-            letter-spacing: .2rem;
+            letter-spacing: 0.2rem;
             position: absolute;
             bottom: 3rem;
             left: 50%;
